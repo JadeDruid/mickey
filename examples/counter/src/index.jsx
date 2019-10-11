@@ -6,7 +6,7 @@ import App from './App'
 const app = createApp()
 
 // 2. Model
-app.model(require('./models/counter.js'))
+app.model(require('./models/counter.js').default)
 
 // 3. View
 app.render(<App />, document.getElementById('root'))
